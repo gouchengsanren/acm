@@ -20,6 +20,12 @@ int main() {
 #endif
     /* 不会，不知道这种动态的小数点后几位怎么写 */
 
+    /* 来自：https://www.cnblogs.com/chromer/p/C_2.html */
+    int a,b,c;
+    while (scanf("%d %d %d", &a, &b, &c) == 3 && a && b && c) {
+        printf("%.*lf\n", c, 1.0*a/b);
+    }
+
     return 0;
 }
 
